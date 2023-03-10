@@ -4,14 +4,18 @@ html {
 
 /* Heading */
 
-ul {
-  list-style: none;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-li:hover {
-  cursor: pointer;
+a:hover {
   color: #007cb9;
-  transform: scale(1.2);
+  transform: scale(1.9);
+}
+
+ul {
+  list-style: none;
 }
 
 header h1 {
@@ -38,6 +42,7 @@ header h1 {
   display: flex;
   justify-content: space-around;
   font-size: 3rem;
+  background: none;
 }
 
 .menu-icon {
@@ -45,14 +50,49 @@ header h1 {
 }
 
 @media screen and (max-width: 758px) {
-  .heading {
-    display: none;
+  .heading--container {
+    display: grid;
+    height: 8rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .menu-icon {
     display: grid;
-    align-self: center;
-    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    justify-self: end;
+  }
+
+  header h1 {
+    align-self: start;
+  }
+
+  .collapsed {
+    display: none;
+  }
+
+  .heading {
+    height: 20rem;
+    color: #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+    padding-left: 0;
+    margin: 0 0 0 1.8rem;
+    grid-column-start: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  #about {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #2d2d2d;
+    border-top: 1px solid #2d2d2d;
   }
 
   .menu-icon:hover {
@@ -61,8 +101,26 @@ header h1 {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 620px) {
   header h1 {
     font-size: 2.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .heading--container {
+    height: 7rem;
+  }
+
+  .menu-icon {
+    margin-top: 0;
+  }
+
+  .heading {
+    margin-top: 0.8rem;
+    font-size: 2.5rem;
+  }
+
+  #about {
+    padding: 1.8rem 0;
   }
 }
