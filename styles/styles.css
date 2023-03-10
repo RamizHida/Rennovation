@@ -1,3 +1,68 @@
-.lol {
-  background-color: aqua;
+html {
+  font-size: 62.5%;
+}
+
+/* Heading */
+
+ul {
+  list-style: none;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #007cb9;
+  transform: scale(1.2);
+}
+
+header h1 {
+  margin-left: 3%;
+  font-weight: 400;
+  font-size: 3.5rem;
+  align-self: center;
+}
+
+.heading--container {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  background: rgb(209, 12, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(209, 12, 12, 1) 45%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.heading {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 758px) {
+  .heading {
+    display: none;
+  }
+
+  .menu-icon {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .menu-icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
 }
