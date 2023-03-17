@@ -581,3 +581,88 @@ button:hover {
     padding: 0.5rem 1rem;
   }
 }
+
+/* FTC Message */
+.message {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+  padding: 1rem;
+  background: #404040;
+  color: whitesmoke;
+  gap: 2rem;
+}
+
+.message h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.message p {
+  font-size: 2rem;
+  text-indent: 1rem;
+  text-align: center;
+  line-height: 3rem;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .message img {
+    height: 45rem;
+  }
+
+  .message p {
+    font-size: 1.7rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .message {
+    flex-direction: column;
+  }
+
+  .message img {
+    width: 70rem;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .message p {
+    font-size: 1.5rem;
+  }
+
+  .message img {
+    width: 60rem;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .message p {
+    font-size: 1.5rem;
+  }
+
+  .message img {
+    width: 55rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .message p {
+    font-size: 1.5rem;
+  }
+
+  .message img {
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .message p {
+    font-size: 1.5rem;
+  }
+
+  .message img {
+    width: 48rem;
+  }
+}
