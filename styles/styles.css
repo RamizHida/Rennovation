@@ -728,3 +728,90 @@ button:hover {
     width: 100%;
   }
 }
+
+/* Recent Projects */
+.image--container {
+  display: flex;
+  margin: 2rem;
+}
+
+.images {
+  border: 2px solid #000;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 50rem;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shown--image {
+  height: 50rem;
+  width: 50rem;
+}
+
+.arrow {
+  height: 2rem;
+  align-self: center;
+  width: 2rem;
+  margin: 0 2rem;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background: lightskyblue;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+#project {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  margin: 3rem auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects--title {
+  margin-bottom: 0;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 750px) {
+  #project {
+    width: 55rem;
+  }
+
+  #shown--image {
+    height: 44rem;
+    width: 44rem;
+    padding: 0;
+  }
+
+  .images {
+    padding: 0;
+    height: 44rem;
+    width: 44rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #project {
+    width: 50rem;
+  }
+
+  #shown--image {
+    height: 40rem;
+    width: 40rem;
+    padding: 0;
+  }
+
+  .images {
+    padding: 0;
+    height: 40rem;
+    width: 40rem;
+  }
+}
