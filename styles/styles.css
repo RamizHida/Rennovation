@@ -1125,3 +1125,13 @@ form div {
     width: 16.5rem;
   }
 }
+
+/* Footer */
+
+footer {
+  background: #404040;
+  padding: 2rem;
+  font-size: 2rem;
+  color: whitesmoke;
+  text-align: center;
+}
