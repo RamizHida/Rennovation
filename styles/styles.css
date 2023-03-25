@@ -43,6 +43,10 @@ nav h1 {
   );
 }
 
+.heading--container h1 {
+  color: #fff;
+}
+
 .heading {
   display: flex;
   justify-content: space-around;
@@ -55,11 +59,17 @@ nav h1 {
 }
 
 @media screen and (max-width: 758px) {
+  .heading--container h1 {
+    color: #404040;
+  }
+
   .heading--container {
     display: grid;
-    height: 8rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  }
+
+  a {
+    color: #fff;
   }
 
   .menu-icon {
@@ -88,7 +98,8 @@ nav h1 {
     justify-content: space-around;
     width: 95%;
     padding-left: 0;
-    margin: 0 0 0 1.8rem;
+    margin-left: 1.8rem;
+    margin-bottom: 5rem;
     grid-column-start: 2;
     grid-column-start: 1;
     grid-column-end: -1;
@@ -111,10 +122,6 @@ nav h1 {
     font-size: 2.5rem;
     margin-left: 1.5rem;
     margin-top: 2rem;
-  }
-
-  .heading--container {
-    height: 7rem;
   }
 
   .menu-icon {
@@ -154,6 +161,10 @@ nav h1 {
   gap: 3rem;
 }
 
+#first--intro {
+  margin-top: 3rem;
+}
+
 .intro div {
   font-size: 2.4rem;
   /* margin: auto; */
@@ -161,6 +172,7 @@ nav h1 {
 
 .intro-para {
   text-indent: 3rem;
+  font-size: 2.2rem;
 }
 
 .intro-para:first-child {
@@ -173,22 +185,12 @@ nav h1 {
 }
 
 .mission--div {
-  padding: 1rem;
-  /* height: 6rem; */
+  padding: 2rem;
   color: #007cb9;
   justify-content: center;
-  background: rgb(181, 1, 16);
-  background: linear-gradient(
-    27deg,
-    rgba(181, 1, 16, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(148, 15, 15, 1) 100%
-  );
   display: flex;
   margin: auto;
   gap: 1rem;
-  /* width: max-content; */
   align-items: center;
   font-size: 4rem;
 }
@@ -203,8 +205,12 @@ nav h1 {
 }
 
 @media screen and (max-width: 1325px) {
-  .intro div {
+  .intro-para {
     font-size: 1.9rem;
+  }
+
+  #first--intro {
+    margin-top: 2rem;
   }
 
   #owner-img {
@@ -217,8 +223,12 @@ nav h1 {
 }
 
 @media screen and (max-width: 1200px) {
-  .intro div {
+  .intro-para {
     font-size: 1.7rem;
+  }
+
+  #first--intro {
+    margin-top: 3rem;
   }
 
   #owner-img {
@@ -227,8 +237,12 @@ nav h1 {
 }
 
 @media screen and (max-width: 1000px) {
-  .intro div {
+  .intro-para {
     font-size: 1.6rem;
+  }
+
+  #first--intro {
+    margin-top: 1rem;
   }
 
   #owner-img {
@@ -289,7 +303,7 @@ nav h1 {
     flex-direction: column-reverse;
   }
 
-  .intro div {
+  .intro-para {
     font-size: 1.9rem;
   }
 
@@ -848,6 +862,7 @@ button:hover {
 .testimonial p {
   font-size: 2.4rem;
   padding: 2rem;
+  color: #fff;
   text-indent: 2rem;
 }
 
@@ -1135,3 +1150,10 @@ footer {
   color: whitesmoke;
   text-align: center;
 }
+
+/*  */
+
+/* p {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Seymour One', sans-serif;
+} */
