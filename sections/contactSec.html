@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Rennovation</title>
+  </head>
+  <body>
+    <div class="contact--container">
+      <div id="contact--top">
+        <h2>Contact Us</h2>
+        <div class="contact--sec">
+          <img src="/resources/location.png" alt="Icon of Earth" />
+          <h3>Atlanta, GA, USA</h3>
+        </div>
+        <div class="contact--sec">
+          <img src="/resources/email.png" alt="Email Icon" />
+          <h3>service@floortoceilingllc.com</h3>
+        </div>
+        <div class="contact--sec">
+          <img src="/resources/phone.png" alt="Phone Icon" />
+          <h3>404-910-6280</h3>
+        </div>
+      </div>
+      <div id="contact--form">
+        <form
+          action="https://formsubmit.co/ramizhida00@gmail.com"
+          method="POST"
+        >
+          <div>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="Name" required />
+          </div>
+          <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required name="Email" required />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" />
+          </div>
+          <div>
+            <label for="textarea">Services Needed</label>
+            <textarea
+              type="text"
+              id="textarea"
+              required
+              name="Message"
+            ></textarea>
+          </div>
+          <div id="thanks">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
