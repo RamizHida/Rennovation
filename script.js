@@ -13,16 +13,16 @@ dropDown.addEventListener('click', () => {
   }
 });
 
-let img0 = '/resources/builder.png';
-let img1 = '/resources/stairs.png';
-let img2 = '/resources/IMG_8031.png';
-let img3 = '/resources/IMG_8418.png';
-let img4 = '/resources/IMG_8233.png';
-let img5 = '/resources/IMG_4697.png';
-let img6 = '/resources/img673.png';
-let img7 = '/resources/IMG_8234.png';
-let img8 = '/resources/IMG_8232.png';
-let img9 = '/resources/IMG_7537.png';
+let img0 = 'resources/builder.png';
+let img1 = 'resources/stairs.png';
+let img2 = 'resources/IMG_8031.png';
+let img3 = 'resources/IMG_8418.png';
+let img4 = 'resources/IMG_8233.png';
+let img5 = 'resources/IMG_4697.png';
+let img6 = 'resources/img673.png';
+let img7 = 'resources/IMG_8234.png';
+let img8 = 'resources/IMG_8232.png';
+let img9 = 'resources/IMG_7537.png';
 
 let imgContainer = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9];
 let imgCount = 0;
